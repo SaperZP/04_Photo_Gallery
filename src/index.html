@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,7 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photo gallery</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page__header header">
+      <h1 class="header__title">Photo Gallery</h1>
+    </header>
 
+    <main class="page__main main">
+      <section class="main__section items">
+        <giv class="items__item item">
+          <img
+            class="item__pic"
+            src="https://picsum.photos/200/300"
+            alt="picture"
+          >
+
+          <p>Caption for photo 1</p>
+        </giv>
+      </section>
+
+      <section class="main__section buttons">
+        <button class="footer__button">Previous</button>
+        <button class="footer__button">Next</button>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <p>&copy; 2024 Photo Gallery</p>
+    </footer>
   </body>
 </html>
