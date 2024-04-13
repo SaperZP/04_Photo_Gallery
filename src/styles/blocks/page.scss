@@ -1,0 +1,81 @@
+$header-height: 80px;
+$buttons-height: 80px;
+$footer-height: 40px;
+
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+
+  &__gallery {
+    background: url("https://picsum.photos/800/800") no-repeat center;
+    background-size: cover;
+    padding: 40px;
+    min-height: calc(100vh - $header-height - $footer-height - $buttons-height);
+  }
+
+  &__buttons {
+    text-align: center;
+    line-height: $buttons-height;
+  }
+}
+
+.standard-block {
+  background-color: #333;
+  color: #fff;
+
+  &__title {
+    text-align: center;
+
+    &--header {
+      line-height: $header-height;
+    }
+
+    &--footer {
+      line-height: $footer-height;
+    }
+  }
+}
+
+.item {
+  width: 33%;
+  float: left;
+  padding: 10px;
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  &__pic {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  &__text {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.buttons {
+  &__button {
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color .8s;
+    border: none;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: #33333380;
+    }
+  }
+}
